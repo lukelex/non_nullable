@@ -6,7 +6,7 @@ Avoids nil returns on specified Ruby methods.
 
 ```ruby
 class Post
-  extend ::NotNil
+  extend ::NonNullable
 
   def content
     nil
@@ -20,7 +20,7 @@ post.content # ""
 # or on all instance methods
 
 class Blog
-  extend ::NotNil
+  extend ::NonNullable
 
   # ...tons of methods...
 
